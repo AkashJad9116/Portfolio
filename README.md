@@ -1,5 +1,4 @@
-# Portfolio
-A portfolio highlighting my accomplishments
-theme: minima
+title: Akash Jadonandan
+theme: jekyll-theme-minimal
 plugins:
-  -jekyll-feed
+  - jekyll-feed
