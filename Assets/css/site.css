@@ -1,0 +1,72 @@
+/* assets/css/site.css */
+/* Generic portfolio styling overrides */
+
+html, body {
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+/* NAVBAR */
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.nav-link.active {
+  color: #0d6efd !important;
+}
+
+/* HERO SECTION */
+header {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+  padding: 100px 0;
+  text-shadow: 0 1px 0 #fff;
+}
+
+#typed-role {
+  font-weight: 600;
+  color: #0d6efd;
+}
+
+/* SECTION HEADINGS */
+section h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  border-left: 5px solid #0d6efd;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* SPACING BETWEEN SECTIONS */
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* FOOTER */
+footer {
+  font-size: 0.9rem;
+  background-color: #212529;
+}
+
+/* LINKS */
+a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* AOS compatibility */
+[data-aos] {
+  transition-duration: 0.6s;
+  transition-timing-function: ease-out;
+}
