@@ -1,6 +1,0 @@
-theme: jekyll-theme-minimal
-title: Akash's portfolio
-description: A portfolio of my acomplishments!
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
