@@ -1,72 +1,51 @@
-/* assets/css/site.css */
-/* Generic portfolio styling overrides */
+/* content/css/site.css */
+/* Purpose: lightweight polish—colors, spacing, hero background, avatar sizing */
 
-html, body {
-  scroll-behavior: smooth;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-  background-color: #f8f9fa;
-  color: #212529;
+:root{
+  --brand-accent: #0d6efd; /* Bootstrap primary */
+  --hero-grad-a: #0d1117;
+  --hero-grad-b: #1f2937;
 }
 
-/* NAVBAR */
-.navbar-brand {
-  font-size: 1.5rem;
-  letter-spacing: 0.5px;
+html { scroll-behavior: smooth; }
+
+.bg-hero{
+  background: radial-gradient(1200px 600px at 10% 20%, rgba(13,110,253,.15), transparent 60%),
+              linear-gradient(160deg, var(--hero-grad-a), var(--hero-grad-b));
+  color: #e8eef7;
 }
 
-.nav-link {
-  font-weight: 500;
-  margin-left: 1rem;
+.navbar.bg-dark { background-color: #0b0f14 !important; }
+
+.hero-avatar{
+  max-width: 240px;
+  border: 4px solid rgba(255,255,255,.15);
 }
 
-.nav-link.active {
-  color: #0d6efd !important;
+.lead .text-primary{ color: var(--brand-accent) !important; }
+
+.card img{ object-fit: cover; height: 180px; }
+
+.progress{
+  height: 10px;
+  background-color: #e9ecef;
+}
+.progress-bar{
+  background-image: linear-gradient(90deg, var(--brand-accent), #6ea8fe);
 }
 
-/* HERO SECTION */
-header {
-  background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
-  padding: 100px 0;
-  text-shadow: 0 1px 0 #fff;
+footer a:hover{ text-decoration: underline; }
+
+/* Make anchor offset friendlier under fixed navbar */
+section[id]::before{
+  content: "";
+  display: block;
+  height: 80px; /* navbar height */
+  margin-top: -80px;
+  visibility: hidden;
 }
 
 #typed-role {
   font-weight: 600;
   color: #0d6efd;
-}
-
-/* SECTION HEADINGS */
-section h2 {
-  font-weight: 700;
-  font-size: 2rem;
-  border-left: 5px solid #0d6efd;
-  padding-left: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-/* SPACING BETWEEN SECTIONS */
-section {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-/* FOOTER */
-footer {
-  font-size: 0.9rem;
-  background-color: #212529;
-}
-
-/* LINKS */
-a {
-  color: #0d6efd;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-/* AOS compatibility */
-[data-aos] {
-  transition-duration: 0.6s;
-  transition-timing-function: ease-out;
 }

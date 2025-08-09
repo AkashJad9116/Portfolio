@@ -6,28 +6,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Akash Jadonandan | Portfolio</title>
 
+  <!-- Canonical -->
+  <link rel="canonical" href="https://akashjad9116.github.io/Portfolio/" />
+
+  <!-- SEO / Social -->
+  <meta name="description" content="Akash Jadonandan — Data Engineering, Data Science, and Data Analysis in New York. I turn raw data into actionable insights and scalable services." />
+  <meta name="author" content="Akash Jadonandan" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0d6efd" />
+
+  <meta property="og:title" content="Akash Jadonandan | Portfolio" />
+  <meta property="og:description" content="Data Engineering • Data Science • Data Analysis — projects, skills, and contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://akashjad9116.github.io/Portfolio/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Akash Jadonandan | Portfolio" />
+  <meta name="twitter:description" content="Data Engineering • Data Science • Data Analysis — projects, skills, and contact." />
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
 
   <!-- AOS Animation -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="/Portfolio/content/css/site.css" />
+  <link rel="stylesheet" href="content/css/site.css" />
+
+  <!-- JSON-LD (Person) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Akash Jadonandan",
+    "jobTitle": "Data Engineer • Data Scientist • Machine Learning Engineer",
+    "url": "https://akashjad9116.github.io/Portfolio/",
+    "sameAs": [
+      "https://www.linkedin.com/in/akashjadonandan",
+      "https://github.com/akashjad9116"
+    ],
+    "address": { "@type": "PostalAddress", "addressLocality": "New York", "addressRegion": "NY", "addressCountry": "US" }
+  }
+  </script>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80" tabindex="0">
 
   <!-- Navbar -->
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm" aria-label="Primary">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Akash Jadonandan</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <a class="navbar-brand fw-bold" href="#home">Akash Jadonandan</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#details">Project Details</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
@@ -35,87 +72,341 @@
     </div>
   </nav>
 
-<!-- Hero Section -->
-<header class="vh-100 d-flex align-items-center justify-content-center text-center bg-light">
-  <div class="container" data-aos="fade-up">
-    <div class="row align-items-center">
-      <!-- Profile Image -->
-      <div class="col-md-4 mb-4 mb-md-0">
-        <img src="/Portfolio/content/images/profile-image.jpg" 
-             alt="Akash Jadonandan" 
-             class="img-fluid rounded-circle shadow-lg"
-             style="max-width: 250px;">
-      </div>
-      <!-- Intro Text -->
-      <div class="col-md-8">
-        <h1 class="display-4 fw-bold">Hi, I'm Akash Jadonandan</h1>
-        <p class="lead">
-          I'm a <span id="typed-role" class="text-primary"></span>
-        </p>
-        <a href="#projects" class="btn btn-primary btn-lg mt-3">View My Work</a>
+  <!-- Hero -->
+  <header id="home" class="vh-100 d-flex align-items-center bg-hero">
+    <div class="container" data-aos="fade-up">
+      <div class="row align-items-center gy-4">
+        <div class="col-md-4 text-center">
+          <img src="content/images/profile-image.jpg" alt="Portrait of Akash Jadonandan" class="img-fluid rounded-circle shadow-lg hero-avatar">
+        </div>
+        <div class="col-md-8 text-center text-md-start">
+          <h1 class="display-5 fw-bold mb-2">Hi, I'm Akash Jadonandan</h1>
+          <p class="lead mb-3">
+            I’m a <span id="typed-role" class="text-primary"></span>
+          </p>
+          <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+            <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">Contact Me</a>
+          </div>
+          <div class="social mt-4">
+            <a class="me-3" href="https://www.linkedin.com/in/akashjadonandan" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="bi bi-linkedin"></i></a>
+            <a class="me-3" href="https://github.com/akashjad9116" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
-  <!-- About Section -->
+  <!-- About -->
   <section id="about" class="py-5 bg-white">
     <div class="container" data-aos="fade-up">
       <h2 class="mb-4">About Me</h2>
-      <p>
-        I'm a Data Engineer and Full Stack Developer based in New York, with deep experience building scalable data platforms,
-        APIs, and machine learning pipelines. I specialize in transforming business processes with Python, SQL, and .NET Core —
-        and I'm passionate about clean architecture, automation, and making data actionable.
+      <p class="fs-5">
+        I’m a data-focused engineer with a software backbone who builds scalable data platforms, APIs, and analytics that turn raw inputs into decisions.
+        At Le Vian, I automate reporting, clean and unify operational data, and deliver dashboards and .NET services across sales, finance, and supply chain.
+        I bridge Software Engineering, <strong>Data Engineering</strong>, and <strong>Data Analysis</strong> to solve real business problems, targeting roles as a
+        <strong>Data Scientist</strong>, <strong>Data Analyst</strong>, and <strong>Machine Learning Engineer</strong>.
       </p>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="py-5 bg-light">
+  <!-- Projects -->
+  <section id="projects" class="py-5 bg-light" aria-labelledby="projects-heading">
     <div class="container" data-aos="fade-up">
-      <h2 class="mb-4">Projects</h2>
-      <ul>
-        <li><strong>S&P 500 Forecasting:</strong> Multi-horizon ML pipeline using Random Forest, PCA, and LSTM. Achieved R² = 0.89.</li>
-        <li><strong>Heart Failure Risk Model:</strong> Apache Spark + logistic regression on structured EHR data. AUC = 82.3%.</li>
-        <li><strong>Mortality Analysis Dashboard:</strong> Tableau dashboard comparing U.S. and Caribbean mortality rates by GDP, healthcare, and education access.</li>
-      </ul>
+      <h2 id="projects-heading" class="mb-4">Projects</h2>
+      <div class="row g-4">
+
+        <!-- Generic Stock Forecasting & Trading -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-img-top d-flex justify-content-center align-items-center py-4">
+              <div class="rounded-circle border bg-white p-4"><i class="bi bi-graph-up-arrow display-6" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Generic Stock Forecasting & Trading</h5>
+              <p class="card-text flex-grow-1">LSTM multi-horizon forecasting (30–90d), FRED & EDGAR integrations, feature selection, backtesting.</p>
+              <div class="small text-muted mb-2">Python • TensorFlow • RF • K-Means</div>
+              <div><a class="btn btn-primary btn-sm" href="#proj-generic-stock">Details</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- S&P 500 (same icon) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-img-top d-flex justify-content-center align-items-center py-4">
+              <div class="rounded-circle border bg-white p-4"><i class="bi bi-graph-up-arrow display-6" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">S&amp;P 500 Market Forecasting</h5>
+              <p class="card-text flex-grow-1">Hybrid ML: RF → PCA → SVR, anomaly & insider detection with K-Means + Isolation Forest.</p>
+              <div class="small text-muted mb-2">Python • scikit-learn • Time Series CV</div>
+              <div><a class="btn btn-primary btn-sm" href="#proj-spy">Details</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Heart Failure -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-img-top d-flex justify-content-center align-items-center py-4">
+              <div class="rounded-circle border bg-white p-4"><i class="bi bi-heart-pulse display-6" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Heart Failure Risk Prediction</h5>
+              <p class="card-text flex-grow-1">Spark logistic regression on 5k patients, feature scaling + PCA, AUC 0.823.</p>
+              <div class="small text-muted mb-2">PySpark • MLlib • Databricks</div>
+              <div><a class="btn btn-primary btn-sm" href="#proj-heart">Details</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mortality -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-img-top d-flex justify-content-center align-items-center py-4">
+              <div class="rounded-circle border bg-white p-4"><i class="bi bi-bar-chart-line display-6" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Mortality Analysis: USA vs Caribbean</h5>
+              <p class="card-text flex-grow-1">Clean/merge multi-source data, interactive Tableau dashboards, policy-relevant insights.</p>
+              <div class="small text-muted mb-2">Excel PQ • Tableau • SQL</div>
+              <div><a class="btn btn-primary btn-sm" href="#proj-mortality">Details</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Weather -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-img-top d-flex justify-content-center align-items-center py-4">
+              <div class="rounded-circle border bg-white p-4"><i class="bi bi-sun display-6" aria-hidden="true"></i></div>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Weather Impact on Resort Viability</h5>
+              <p class="card-text flex-grow-1">World Weather data, MLR & decision trees, KNN/median imputation.</p>
+              <div class="small text-muted mb-2">R • Regression • Trees</div>
+              <div><a class="btn btn-primary btn-sm" href="#proj-weather">Details</a></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="https://github.com/akashjad9116?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline-dark">See more on GitHub</a>
+      </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="py-5 bg-white">
+  <!-- Project Details -->
+  <section id="details" class="py-5 bg-white" aria-labelledby="details-heading">
     <div class="container" data-aos="fade-up">
-      <h2 class="mb-4">Skills</h2>
-      <ul>
-        <li><strong>Languages:</strong> Python, SQL, C#, .NET Core, JavaScript, R</li>
-        <li><strong>Tools:</strong> Power BI, Tableau, Spark MLlib, Git, REST APIs</li>
-        <li><strong>Data Engineering:</strong> ETL Pipelines, Power Automate, SQL Server, Data Warehousing</li>
-        <li><strong>ML Techniques:</strong> Regression, Time Series, PCA, LSTM, Anomaly Detection</li>
-      </ul>
+      <h2 id="details-heading" class="mb-4">Project Details</h2>
+
+      <article id="proj-generic-stock" class="mb-5">
+        <h3 class="h4">Generic Stock Forecasting & Trading System</h3>
+        <div class="small text-muted mb-2">Dec 2024 – Present</div>
+        <div class="mb-3">
+          <span class="badge bg-secondary me-1">Python</span><span class="badge bg-secondary me-1">TensorFlow (LSTM)</span>
+          <span class="badge bg-secondary me-1">Yahoo Finance API</span><span class="badge bg-secondary me-1">FRED API</span>
+          <span class="badge bg-secondary me-1">EDGAR API</span><span class="badge bg-secondary me-1">Random Forest</span>
+          <span class="badge bg-secondary me-1">K-Means</span><span class="badge bg-secondary me-1">Backtesting</span>
+        </div>
+        <p class="mb-3">Built a generalized stock prediction platform using LSTM … custom backtesting engine to simulate performance, track P/L, and produce full trade history.</p>
+        <ul class="mb-3"><li>Horizons: 30–90 day forecasts</li><li>Signals: cluster-based regimes</li><li>Evaluation: rolling window + backtests</li></ul>
+        <a href="#projects" class="btn btn-outline-primary btn-sm mt-1">Back to projects</a>
+      </article>
+
+      <article id="proj-spy" class="mb-5">
+        <h3 class="h4">S&amp;P 500 Market Forecasting</h3>
+        <div class="small text-muted mb-2">Sep 2024 – Dec 2024</div>
+        <div class="mb-3">
+          <span class="badge bg-secondary me-1">Python</span><span class="badge bg-secondary me-1">scikit-learn</span>
+          <span class="badge bg-secondary me-1">Random Forest</span><span class="badge bg-secondary me-1">PCA</span>
+          <span class="badge bg-secondary me-1">SVR</span><span class="badge bg-secondary me-1">Isolation Forest</span>
+          <span class="badge bg-secondary me-1">Time Series CV</span>
+        </div>
+        <p class="mb-3">Integrated SPY, macro indicators (FRED), and insider trading data (EDGAR). Pipeline: RF → PCA → SVR (<strong>R² = 0.89</strong>), plus K-Means and Isolation Forest for anomaly/insider detection with rolling validation.</p>
+        <ul class="mb-3"><li>R²: 0.89 on holdout</li><li>PCA-compressed feature space</li><li>Rolling split validation</li></ul>
+        <a href="#projects" class="btn btn-outline-primary btn-sm mt-1">Back to projects</a>
+      </article>
+
+      <article id="proj-heart" class="mb-5">
+        <h3 class="h4">Heart Failure Risk Prediction</h3>
+        <div class="small text-muted mb-2">May 2024 – Aug 2024</div>
+        <div class="mb-3">
+          <span class="badge bg-secondary me-1">PySpark</span><span class="badge bg-secondary me-1">MLlib</span>
+          <span class="badge bg-secondary me-1">Logistic Regression</span><span class="badge bg-secondary me-1">PCA</span>
+          <span class="badge bg-secondary me-1">Databricks</span>
+        </div>
+        <p class="mb-3">Binary classifier on ~5,000 patients (<strong>AUC = 0.823</strong>); key predictors: age, ejection fraction, serum creatinine; scaling + PCA for stability.</p>
+        <a href="#projects" class="btn btn-outline-primary btn-sm mt-1">Back to projects</a>
+      </article>
+
+      <article id="proj-mortality" class="mb-5">
+        <h3 class="h4">Mortality Analysis: USA vs Caribbean</h3>
+        <div class="small text-muted mb-2">May 2024 – Aug 2024</div>
+        <div class="mb-3">
+          <span class="badge bg-secondary me-1">Excel Power Query</span><span class="badge bg-secondary me-1">Tableau</span>
+          <span class="badge bg-secondary me-1">SQL</span><span class="badge bg-secondary me-1">Feature Engineering</span>
+        </div>
+        <p class="mb-3">Merged public health datasets, engineered features, and built interactive dashboards to explore links between mortality causes and socioeconomic factors (2000–2017).</p>
+        <a href="#projects" class="btn btn-outline-primary btn-sm mt-1">Back to projects</a>
+      </article>
+
+      <article id="proj-weather" class="mb-2">
+        <h3 class="h4">Weather Impact on Resort Viability</h3>
+        <div class="small text-muted mb-2">Feb 2024 – May 2024</div>
+        <div class="mb-3">
+          <span class="badge bg-secondary me-1">R</span><span class="badge bg-secondary me-1">Multiple Linear Regression</span>
+          <span class="badge bg-secondary me-1">Decision Trees</span><span class="badge bg-secondary me-1">KNN/Median Imputation</span>
+        </div>
+        <p class="mb-3">Modeled climate → temperature variability with MLR & trees; handled missingness via KNN/median imputation.</p>
+        <a href="#projects" class="btn btn-outline-primary btn-sm mt-1">Back to projects</a>
+      </article>
+
+      <div class="text-end"><a href="#home" class="small text-decoration-none">Back to top ↑</a></div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-5 bg-light">
+  <!-- Skills (granular, Bootstrap format) -->
+  <section id="skills" class="py-5 bg-light" aria-labelledby="skills-heading">
     <div class="container" data-aos="fade-up">
-      <h2 class="mb-4">Contact</h2>
-      <p>📧 <a href="mailto:akashjad9116@gmail.com">akashjad9116@gmail.com</a></p>
-      <p>📍 New York, NY</p>
+      <h2 id="skills-heading" class="mb-4">Skills</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+
+          <div class="mb-3">
+            <label class="form-label">Python (Pandas, NumPy, SciPy, scikit-learn)</label>
+            <div class="progress" role="progressbar" aria-label="Python stack" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width:93%">93%</div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Machine Learning (Supervised, Time Series, LSTM)</label>
+            <div class="progress" role="progressbar" aria-label="ML" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width:86%">86%</div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Deep Learning (TensorFlow/Keras; PyTorch basics)</label>
+            <div class="progress" role="progressbar" aria-label="Deep Learning" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width:78%">78%</div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Data Engineering (ETL, Pipelines, Orchestration)</label>
+            <div class="progress" role="progressbar" aria-label="Data Engineering" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width:90%">90%</div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Big Data (Spark / PySpark, Databricks)</label>
+            <div class="progress" role="progressbar" aria-label="Big Data" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width:82%">82%</div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+
+          <div class="mb-3">
+            <label class="form-label">SQL & Databases (SQL Server, T-SQL, MySQL)</label>
+            <div class="progress" role="progressbar" aria-label="SQL" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width:90%">90%</div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Feature Engineering & Model Evaluation (CV, metrics, A/B)</label>
+            <div class="progress" role="progressbar" aria-label="FE & Evaluation" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width:85%">85%</div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Statistical Modeling (Regression, Hypothesis Testing, PCA)</label>
+            <div class="progress" role="progressbar" aria-label="Stats" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width:84%">84%</div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Visualization & BI (Power BI, Tableau)</label>
+            <div class="progress" role="progressbar" aria-label="BI" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width:85%">85%</div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+		  <label class="form-label">Software Engineering (.NET Core, JavaScript, REST APIs)</label>
+		  <div class="progress" role="progressbar" aria-label="Software Engineering" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+			<div class="progress-bar" style="width:88%">88%</div>
+		  </div>
+		</div>
+
+        </div>
+      </div>
+      <p class="small text-muted mt-2">Also: Data Cleaning, Power Automate, Git, CI/CD.</p>
     </div>
   </section>
+
+  <!-- Contact -->
+	<section id="contact" class="py-5 bg-hero text-light" aria-labelledby="contact-heading">
+	  <div class="container" data-aos="fade-up">
+		<h2 id="contact-heading" class="mb-4">Contact</h2>
+
+		<div class="row gy-3">
+		  <div class="col-md-6">
+			<p class="fs-5 mb-2">
+			  <i class="bi bi-telephone-fill me-2"></i>
+			  <a class="link-light text-decoration-none" href="tel:+13475490539">(347) 549-0539</a>
+			</p>
+			<p class="fs-5 mb-2">
+			  <i class="bi bi-envelope-fill me-2"></i>
+			  <a class="link-light text-decoration-none" href="mailto:akashjad9116@gmail.com">akashjad9116@gmail.com</a>
+			</p>
+		  </div>
+
+		  <div class="col-md-6">
+			<p class="fs-5 mb-2">
+			  <i class="bi bi-linkedin me-2"></i>
+			  <a class="link-light text-decoration-none" href="https://www.linkedin.com/in/akashjad" target="_blank" rel="noopener">
+				linkedin.com/in/akashjad
+			  </a>
+			</p>
+			<p class="fs-5 mb-2">
+			  <i class="bi bi-github me-2"></i>
+			  <a class="link-light text-decoration-none" href="https://github.com/akashjad9116" target="_blank" rel="noopener">
+				github.com/akashjad9116
+			  </a>
+			</p>
+			<p class="fs-5 mb-0">
+			  <i class="bi bi-geo-alt-fill me-2"></i>New York, NY
+			</p>
+		  </div>
+		</div>
+	  </div>
+	</section>
+
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    &copy; 2025 Akash Jadonandan. All rights reserved.
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container small">
+      <div class="mb-2">&copy; <span id="year"></span> Akash Jadonandan. All rights reserved.</div>
+      <div><a class="text-white-50 text-decoration-none" href="#home">Back to top ↑</a></div>
+    </div>
   </footer>
 
-  <!-- Bootstrap & Scripts -->
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script src="/Portfolio/content/js/main.js"></script>
+  <script src="content/js/main.js"></script>
 </body>
 </html>
