@@ -44,7 +44,7 @@
     "jobTitle": "Data Engineer • Data Scientist • Machine Learning Engineer",
     "url": "https://akashjad9116.github.io/Portfolio/",
     "sameAs": [
-      "https://www.linkedin.com/in/akashjadonandan",
+      "https://www.linkedin.com/in/akashjad",
       "https://github.com/akashjad9116"
     ],
     "address": { "@type": "PostalAddress", "addressLocality": "New York", "addressRegion": "NY", "addressCountry": "US" }
@@ -74,6 +74,9 @@
 
   <!-- Hero -->
   <header id="home" class="vh-100 d-flex align-items-center bg-hero">
+    <!-- Reactive, lightweight canvas background -->
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
     <div class="container" data-aos="fade-up">
       <div class="row align-items-center gy-4">
         <div class="col-md-4 text-center">
@@ -89,8 +92,8 @@
             <a href="#contact" class="btn btn-outline-light btn-lg">Contact Me</a>
           </div>
           <div class="social mt-4">
-            <a class="me-3" href="https://www.linkedin.com/in/akashjadonandan" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="bi bi-linkedin"></i></a>
-            <a class="me-3" href="https://github.com/akashjad9116" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="bi bi-github"></i></a>
+            <a class="me-3" href="https://www.linkedin.com/in/akashjad" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+            <a class="me-3" href="https://github.com/akashjad9116" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="bi bi-github" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
@@ -344,11 +347,11 @@
           </div>
 
           <div class="mb-3">
-		  <label class="form-label">Software Engineering (.NET Core, JavaScript, REST APIs)</label>
-		  <div class="progress" role="progressbar" aria-label="Software Engineering" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
-			<div class="progress-bar" style="width:88%">88%</div>
-		  </div>
-		</div>
+            <label class="form-label">Software Engineering (.NET Core, JavaScript, REST APIs)</label>
+            <div class="progress" role="progressbar" aria-label="Software Engineering" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width:88%">88%</div>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -357,43 +360,42 @@
   </section>
 
   <!-- Contact -->
-	<section id="contact" class="py-5 bg-hero text-light" aria-labelledby="contact-heading">
-	  <div class="container" data-aos="fade-up">
-		<h2 id="contact-heading" class="mb-4">Contact</h2>
+  <section id="contact" class="py-5 bg-hero text-light" aria-labelledby="contact-heading">
+    <div class="container" data-aos="fade-up">
+      <h2 id="contact-heading" class="mb-4">Contact</h2>
 
-		<div class="row gy-3">
-		  <div class="col-md-6">
-			<p class="fs-5 mb-2">
-			  <i class="bi bi-telephone-fill me-2"></i>
-			  <a class="link-light text-decoration-none" href="tel:+13475490539">(347) 549-0539</a>
-			</p>
-			<p class="fs-5 mb-2">
-			  <i class="bi bi-envelope-fill me-2"></i>
-			  <a class="link-light text-decoration-none" href="mailto:akashjad9116@gmail.com">akashjad9116@gmail.com</a>
-			</p>
-		  </div>
+      <div class="row gy-3">
+        <div class="col-md-6">
+          <p class="fs-5 mb-2">
+            <i class="bi bi-telephone-fill me-2" aria-hidden="true"></i>
+            <a class="link-light text-decoration-none" href="tel:+13475490539">(347) 549-0539</a>
+          </p>
+          <p class="fs-5 mb-2">
+            <i class="bi bi-envelope-fill me-2" aria-hidden="true"></i>
+            <a class="link-light text-decoration-none" href="mailto:akashjad9116@gmail.com">akashjad9116@gmail.com</a>
+          </p>
+        </div>
 
-		  <div class="col-md-6">
-			<p class="fs-5 mb-2">
-			  <i class="bi bi-linkedin me-2"></i>
-			  <a class="link-light text-decoration-none" href="https://www.linkedin.com/in/akashjad" target="_blank" rel="noopener">
-				linkedin.com/in/akashjad
-			  </a>
-			</p>
-			<p class="fs-5 mb-2">
-			  <i class="bi bi-github me-2"></i>
-			  <a class="link-light text-decoration-none" href="https://github.com/akashjad9116" target="_blank" rel="noopener">
-				github.com/akashjad9116
-			  </a>
-			</p>
-			<p class="fs-5 mb-0">
-			  <i class="bi bi-geo-alt-fill me-2"></i>New York, NY
-			</p>
-		  </div>
-		</div>
-	  </div>
-	</section>
-
+        <div class="col-md-6">
+          <p class="fs-5 mb-2">
+            <i class="bi bi-linkedin me-2" aria-hidden="true"></i>
+            <a class="link-light text-decoration-none" href="https://www.linkedin.com/in/akashjad" target="_blank" rel="noopener">
+              linkedin.com/in/akashjad
+            </a>
+          </p>
+          <p class="fs-5 mb-2">
+            <i class="bi bi-github me-2" aria-hidden="true"></i>
+            <a class="link-light text-decoration-none" href="https://github.com/akashjad9116" target="_blank" rel="noopener">
+              github.com/akashjad9116
+            </a>
+          </p>
+          <p class="fs-5 mb-0">
+            <i class="bi bi-geo-alt-fill me-2" aria-hidden="true"></i>New York, NY
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-4">

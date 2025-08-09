@@ -49,3 +49,13 @@ section[id]::before{
   font-weight: 600;
   color: #0d6efd;
 }
+
+/* hero canvas for reactive background */
+#hero-canvas{
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  display:block;
+  opacity:.35;
+  pointer-events:none;
+  filter:saturate(105%);
+}
