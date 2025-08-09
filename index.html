@@ -9,19 +9,30 @@
   <!-- Canonical -->
   <link rel="canonical" href="https://akashjad9116.github.io/Portfolio/" />
 
-  <!-- SEO / Social -->
-  <meta name="description" content="Akash Jadonandan — Data Engineering, Data Science, and Data Analysis in New York. I turn raw data into actionable insights and scalable services." />
+   <!-- SEO / Social -->
+  <meta name="description" content="Akash Jadonandan — Data Engineer, Data Scientist, and Machine Learning Engineer in New York. I design scalable data pipelines, predictive models, and analytics that turn raw data into business value." />
   <meta name="author" content="Akash Jadonandan" />
   <meta name="robots" content="index,follow" />
   <meta name="theme-color" content="#0d6efd" />
 
-  <meta property="og:title" content="Akash Jadonandan | Portfolio" />
-  <meta property="og:description" content="Data Engineering • Data Science • Data Analysis — projects, skills, and contact." />
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:title" content="Akash Jadonandan | Data Engineer • Data Scientist • ML Engineer" />
+  <meta property="og:description" content="Full-stack data professional with expertise in ETL pipelines, big data, predictive analytics, and cloud-based solutions. Projects, skills, and contact info inside." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://akashjad9116.github.io/Portfolio/" />
+  <meta property="og:image" content="https://akashjad9116.github.io/Portfolio/content/images/profile-image.jpg" />
+  <meta property="og:image:alt" content="Portrait of Akash Jadonandan" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Akash Jadonandan | Portfolio" />
-  <meta name="twitter:description" content="Data Engineering • Data Science • Data Analysis — projects, skills, and contact." />
+  <meta name="twitter:title" content="Akash Jadonandan | Data Engineer • Data Scientist • ML Engineer" />
+  <meta name="twitter:description" content="Data Engineering • Machine Learning • Analytics — transforming raw data into actionable insights." />
+  <meta name="twitter:image" content="https://akashjad9116.github.io/Portfolio/content/images/profile-image.jpg" />
+  <meta name="twitter:image:alt" content="Portrait of Akash Jadonandan" />
+
+  <!-- Keywords for SEO -->
+  <meta name="keywords" content="Data Engineer, Data Scientist, Machine Learning Engineer, ETL, Big Data, Data Analytics, SQL, Python, Spark, AWS, Azure, Databricks, AI, Deep Learning, LSTM, Random Forest, PCA, Tableau, Power BI, Cloud Data Engineering, New York, Akash Jadonandan" />
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -35,21 +46,64 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="content/css/site.css" />
 
-  <!-- JSON-LD (Person) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Akash Jadonandan",
-    "jobTitle": "Data Engineer • Data Scientist • Machine Learning Engineer",
-    "url": "https://akashjad9116.github.io/Portfolio/",
-    "sameAs": [
-      "https://www.linkedin.com/in/akashjad",
-      "https://github.com/akashjad9116"
-    ],
-    "address": { "@type": "PostalAddress", "addressLocality": "New York", "addressRegion": "NY", "addressCountry": "US" }
-  }
-  </script>
+<!-- JSON-LD (Person) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Akash Jadonandan",
+  "image": "https://akashjad9116.github.io/Portfolio/content/images/profile-image.jpg",
+  "jobTitle": "Data Engineer, Data Scientist, Machine Learning Engineer",
+  "alternateName": "Akash J.",
+  "description": "Full-stack data professional specializing in ETL pipelines, cloud data platforms, predictive analytics, and machine learning. Skilled in Python, SQL, Spark, AWS, Azure, and Databricks.",
+  "url": "https://akashjad9116.github.io/Portfolio/",
+  "sameAs": [
+    "https://www.linkedin.com/in/akashjad",
+    "https://github.com/akashjad9116"
+  ],
+  "email": "mailto:akashjad9116@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "New York",
+    "addressRegion": "NY",
+    "addressCountry": "US"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Saint Peter's University",
+      "sameAs": "https://www.saintpeters.edu/"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Adelphi University",
+      "sameAs": "https://www.adelphi.edu/"
+    }
+  ],
+  "knowsAbout": [
+    "Data Engineering",
+    "Machine Learning",
+    "Data Science",
+    "ETL Development",
+    "Big Data",
+    "Data Analytics",
+    "Python",
+    "SQL",
+    "Apache Spark",
+    "AWS",
+    "Azure",
+    "Databricks",
+    "LSTM",
+    "Random Forest",
+    "Power BI",
+    "Tableau",
+    "Deep Learning",
+    "Cloud Data Engineering"
+  ],
+  "nationality": "US"
+}
+</script>
+
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80" tabindex="0">
 
@@ -83,7 +137,7 @@
           <img src="content/images/profile-image.jpg" alt="Portrait of Akash Jadonandan" class="img-fluid rounded-circle shadow-lg hero-avatar">
         </div>
         <div class="col-md-8 text-center text-md-start">
-          <h1 class="display-5 fw-bold mb-2">Hi, I'm Akash Jadonandan</h1>
+          <h1 class="display-5 fw-bold mb-2">Hi, I'm Akash</h1>
           <p class="lead mb-3">
             I’m a <span id="typed-role" class="text-primary"></span>
           </p>
@@ -113,165 +167,235 @@
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="py-5 bg-light" aria-labelledby="projects-heading">
-    <div class="container" data-aos="fade-up">
-      <h2 id="projects-heading" class="mb-4">Projects</h2>
-      <div class="row g-4">
+<!-- Projects -->
+<section id="projects" class="py-5 bg-light" aria-labelledby="projects-heading">
+  <div class="container" data-aos="fade-up">
+    <h2 id="projects-heading" class="mb-4">Projects</h2>
+    <div class="row g-4">
 
-        <!-- Generic Stock Forecasting & Trading -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-img-top d-flex justify-content-center align-items-center py-4">
-              <div class="rounded-circle border bg-white p-4"><i class="bi bi-graph-up-arrow display-6" aria-hidden="true"></i></div>
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Generic Stock Forecasting & Trading</h5>
-              <p class="card-text flex-grow-1">LSTM multi-horizon forecasting (30–90d), FRED & EDGAR integrations, feature selection, backtesting.</p>
-              <div class="small text-muted mb-2">Python • TensorFlow • RF • K-Means</div>
-              <div><a class="btn btn-primary btn-sm" href="#proj-generic-stock">Details</a></div>
-            </div>
+      <!-- Generic Stock Forecasting & Trading -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-img-top d-flex justify-content-center align-items-center py-4">
+            <div class="rounded-circle border bg-white p-4"><i class="bi bi-graph-up-arrow display-6" aria-hidden="true"></i></div>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Generic Stock Forecasting & Trading</h5>
+            <p class="card-text flex-grow-1">
+              LSTM multi-horizon forecasting (30–90d), integrated market + macro + insider data, feature selection, signal generation, backtesting.
+            </p>
+            <div class="small text-muted mb-2">Python • TensorFlow • Deep Learning • Random Forest • K-Means • PCA</div>
+            <div><a class="btn btn-primary btn-sm" href="#proj-generic-stock">Details</a></div>
           </div>
         </div>
-
-        <!-- S&P 500 (same icon) -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-img-top d-flex justify-content-center align-items-center py-4">
-              <div class="rounded-circle border bg-white p-4"><i class="bi bi-graph-up-arrow display-6" aria-hidden="true"></i></div>
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">S&amp;P 500 Market Forecasting</h5>
-              <p class="card-text flex-grow-1">Hybrid ML: RF → PCA → SVR, anomaly & insider detection with K-Means + Isolation Forest.</p>
-              <div class="small text-muted mb-2">Python • scikit-learn • Time Series CV</div>
-              <div><a class="btn btn-primary btn-sm" href="#proj-spy">Details</a></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Heart Failure -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-img-top d-flex justify-content-center align-items-center py-4">
-              <div class="rounded-circle border bg-white p-4"><i class="bi bi-heart-pulse display-6" aria-hidden="true"></i></div>
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Heart Failure Risk Prediction</h5>
-              <p class="card-text flex-grow-1">Spark logistic regression on 5k patients, feature scaling + PCA, AUC 0.823.</p>
-              <div class="small text-muted mb-2">PySpark • MLlib • Databricks</div>
-              <div><a class="btn btn-primary btn-sm" href="#proj-heart">Details</a></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Mortality -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-img-top d-flex justify-content-center align-items-center py-4">
-              <div class="rounded-circle border bg-white p-4"><i class="bi bi-bar-chart-line display-6" aria-hidden="true"></i></div>
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Mortality Analysis: USA vs Caribbean</h5>
-              <p class="card-text flex-grow-1">Clean/merge multi-source data, interactive Tableau dashboards, policy-relevant insights.</p>
-              <div class="small text-muted mb-2">Excel PQ • Tableau • SQL</div>
-              <div><a class="btn btn-primary btn-sm" href="#proj-mortality">Details</a></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Weather -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-img-top d-flex justify-content-center align-items-center py-4">
-              <div class="rounded-circle border bg-white p-4"><i class="bi bi-sun display-6" aria-hidden="true"></i></div>
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Weather Impact on Resort Viability</h5>
-              <p class="card-text flex-grow-1">World Weather data, MLR & decision trees, KNN/median imputation.</p>
-              <div class="small text-muted mb-2">R • Regression • Trees</div>
-              <div><a class="btn btn-primary btn-sm" href="#proj-weather">Details</a></div>
-            </div>
-          </div>
-        </div>
-
       </div>
 
-      <div class="text-center mt-4">
-        <a href="https://github.com/akashjad9116?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline-dark">See more on GitHub</a>
+      <!-- S&P 500 (same icon) -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-img-top d-flex justify-content-center align-items-center py-4">
+            <div class="rounded-circle border bg-white p-4"><i class="bi bi-graph-up-arrow display-6" aria-hidden="true"></i></div>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">S&amp;P 500 Market Forecasting</h5>
+            <p class="card-text flex-grow-1">
+              RF → PCA → SVR pipeline; anomaly/insider detection; strong generalization via time-series validation.
+            </p>
+            <div class="small text-muted mb-2">Python • SVM (SVR) • Random Forest • PCA • K-Means</div>
+            <div><a class="btn btn-primary btn-sm" href="#proj-spy">Details</a></div>
+          </div>
+        </div>
       </div>
+
+      <!-- Heart Failure -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-img-top d-flex justify-content-center align-items-center py-4">
+            <div class="rounded-circle border bg-white p-4"><i class="bi bi-heart-pulse display-6" aria-hidden="true"></i></div>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Heart Failure Risk Prediction</h5>
+            <p class="card-text flex-grow-1">Binary classifier on ~5k patients with feature scaling + PCA (AUC 0.823).</p>
+            <div class="small text-muted mb-2">Python • Apache Spark • Logistic Regression • PCA</div>
+            <div><a class="btn btn-primary btn-sm" href="#proj-heart">Details</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mortality -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-img-top d-flex justify-content-center align-items-center py-4">
+            <div class="rounded-circle border bg-white p-4"><i class="bi bi-bar-chart-line display-6" aria-hidden="true"></i></div>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Mortality Analysis: USA vs Caribbean</h5>
+            <p class="card-text flex-grow-1">Data cleaning/feature engineering; interactive dashboards; policy-relevant insights.</p>
+            <div class="small text-muted mb-2">Microsoft Excel • Power Query • Tableau • Feature Engineering • Data Visualization</div>
+            <div><a class="btn btn-primary btn-sm" href="#proj-mortality">Details</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weather -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-img-top d-flex justify-content-center align-items-center py-4">
+            <div class="rounded-circle border bg-white p-4"><i class="bi bi-sun display-6" aria-hidden="true"></i></div>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Weather Impact on Resort Viability</h5>
+            <p class="card-text flex-grow-1">Climate analytics; regression modeling; robust handling of missing data.</p>
+            <div class="small text-muted mb-2">R • Regression Analysis • Data Cleaning • Feature Engineering</div>
+            <div><a class="btn btn-primary btn-sm" href="#proj-weather">Details</a></div>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
 
-  <!-- Project Details -->
-  <section id="details" class="py-5 bg-white" aria-labelledby="details-heading">
-    <div class="container" data-aos="fade-up">
-      <h2 id="details-heading" class="mb-4">Project Details</h2>
-
-      <article id="proj-generic-stock" class="mb-5">
-        <h3 class="h4">Generic Stock Forecasting & Trading System</h3>
-        <div class="small text-muted mb-2">Dec 2024 – Present</div>
-        <div class="mb-3">
-          <span class="badge bg-secondary me-1">Python</span><span class="badge bg-secondary me-1">TensorFlow (LSTM)</span>
-          <span class="badge bg-secondary me-1">Yahoo Finance API</span><span class="badge bg-secondary me-1">FRED API</span>
-          <span class="badge bg-secondary me-1">EDGAR API</span><span class="badge bg-secondary me-1">Random Forest</span>
-          <span class="badge bg-secondary me-1">K-Means</span><span class="badge bg-secondary me-1">Backtesting</span>
-        </div>
-        <p class="mb-3">Built a generalized stock prediction platform using LSTM … custom backtesting engine to simulate performance, track P/L, and produce full trade history.</p>
-        <ul class="mb-3"><li>Horizons: 30–90 day forecasts</li><li>Signals: cluster-based regimes</li><li>Evaluation: rolling window + backtests</li></ul>
-        <a href="#projects" class="btn btn-outline-primary btn-sm mt-1">Back to projects</a>
-      </article>
-
-      <article id="proj-spy" class="mb-5">
-        <h3 class="h4">S&amp;P 500 Market Forecasting</h3>
-        <div class="small text-muted mb-2">Sep 2024 – Dec 2024</div>
-        <div class="mb-3">
-          <span class="badge bg-secondary me-1">Python</span><span class="badge bg-secondary me-1">scikit-learn</span>
-          <span class="badge bg-secondary me-1">Random Forest</span><span class="badge bg-secondary me-1">PCA</span>
-          <span class="badge bg-secondary me-1">SVR</span><span class="badge bg-secondary me-1">Isolation Forest</span>
-          <span class="badge bg-secondary me-1">Time Series CV</span>
-        </div>
-        <p class="mb-3">Integrated SPY, macro indicators (FRED), and insider trading data (EDGAR). Pipeline: RF → PCA → SVR (<strong>R² = 0.89</strong>), plus K-Means and Isolation Forest for anomaly/insider detection with rolling validation.</p>
-        <ul class="mb-3"><li>R²: 0.89 on holdout</li><li>PCA-compressed feature space</li><li>Rolling split validation</li></ul>
-        <a href="#projects" class="btn btn-outline-primary btn-sm mt-1">Back to projects</a>
-      </article>
-
-      <article id="proj-heart" class="mb-5">
-        <h3 class="h4">Heart Failure Risk Prediction</h3>
-        <div class="small text-muted mb-2">May 2024 – Aug 2024</div>
-        <div class="mb-3">
-          <span class="badge bg-secondary me-1">PySpark</span><span class="badge bg-secondary me-1">MLlib</span>
-          <span class="badge bg-secondary me-1">Logistic Regression</span><span class="badge bg-secondary me-1">PCA</span>
-          <span class="badge bg-secondary me-1">Databricks</span>
-        </div>
-        <p class="mb-3">Binary classifier on ~5,000 patients (<strong>AUC = 0.823</strong>); key predictors: age, ejection fraction, serum creatinine; scaling + PCA for stability.</p>
-        <a href="#projects" class="btn btn-outline-primary btn-sm mt-1">Back to projects</a>
-      </article>
-
-      <article id="proj-mortality" class="mb-5">
-        <h3 class="h4">Mortality Analysis: USA vs Caribbean</h3>
-        <div class="small text-muted mb-2">May 2024 – Aug 2024</div>
-        <div class="mb-3">
-          <span class="badge bg-secondary me-1">Excel Power Query</span><span class="badge bg-secondary me-1">Tableau</span>
-          <span class="badge bg-secondary me-1">SQL</span><span class="badge bg-secondary me-1">Feature Engineering</span>
-        </div>
-        <p class="mb-3">Merged public health datasets, engineered features, and built interactive dashboards to explore links between mortality causes and socioeconomic factors (2000–2017).</p>
-        <a href="#projects" class="btn btn-outline-primary btn-sm mt-1">Back to projects</a>
-      </article>
-
-      <article id="proj-weather" class="mb-2">
-        <h3 class="h4">Weather Impact on Resort Viability</h3>
-        <div class="small text-muted mb-2">Feb 2024 – May 2024</div>
-        <div class="mb-3">
-          <span class="badge bg-secondary me-1">R</span><span class="badge bg-secondary me-1">Multiple Linear Regression</span>
-          <span class="badge bg-secondary me-1">Decision Trees</span><span class="badge bg-secondary me-1">KNN/Median Imputation</span>
-        </div>
-        <p class="mb-3">Modeled climate → temperature variability with MLR & trees; handled missingness via KNN/median imputation.</p>
-        <a href="#projects" class="btn btn-outline-primary btn-sm mt-1">Back to projects</a>
-      </article>
-
-      <div class="text-end"><a href="#home" class="small text-decoration-none">Back to top ↑</a></div>
+    <div class="text-center mt-4">
+      <a href="https://github.com/akashjad9116?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline-dark">See more on GitHub</a>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- Project Details -->
+<section id="details" class="py-5 bg-white" aria-labelledby="details-heading">
+  <div class="container" data-aos="fade-up">
+    <h2 id="details-heading" class="mb-4">Project Details</h2>
+
+    <!-- Generic Stock Forecasting & Trading -->
+    <article id="proj-generic-stock" class="mb-5">
+      <h3 class="h4">Generic Stock Forecasting & Trading System</h3>
+      <div class="small text-muted mb-2">Dec 2024 – Present</div>
+      <div class="mb-3">
+        <span class="badge bg-secondary me-1">Python</span>
+        <span class="badge bg-secondary me-1">TensorFlow</span>
+        <span class="badge bg-secondary me-1">Deep Learning</span>
+        <span class="badge bg-secondary me-1">Random Forest</span>
+        <span class="badge bg-secondary me-1">K-Means</span>
+        <span class="badge bg-secondary me-1">PCA</span>
+        <span class="badge bg-secondary me-1">Predictive Modeling</span>
+        <span class="badge bg-secondary me-1">Predictive Analytics</span>
+        <span class="badge bg-secondary me-1">Data Cleaning</span>
+        <span class="badge bg-secondary me-1">Data Visualization</span>
+        <span class="badge bg-secondary me-1">Data Science</span>
+        <span class="badge bg-secondary me-1">Machine Learning</span>
+        <span class="badge bg-secondary me-1">Feature Engineering</span>
+        <span class="badge bg-secondary me-1">Backtesting</span>
+        <span class="badge bg-secondary me-1">Yahoo Finance API</span>
+        <span class="badge bg-secondary me-1">FRED API</span>
+        <span class="badge bg-secondary me-1">EDGAR API</span>
+      </div>
+      <p class="mb-3">
+        Built a generalized stock prediction platform using LSTM neural networks for multi-horizon forecasting (30–90 days).
+        Integrated historical stock price data (Yahoo Finance API), macroeconomic indicators (FRED API), and insider trading disclosures (EDGAR API).
+        Applied Random Forest for feature selection and K-Means clustering to generate adaptive buy/sell signals; included a custom backtesting engine.
+      </p>
+      <ul class="mb-3">
+        <li>Forecast horizons: 30–90 days</li>
+        <li>Signals: cluster-based regimes</li>
+        <li>Validation: rolling windows + backtests</li>
+      </ul>
+      <a href="#projects" class="btn btn-outline-primary btn-sm mt-1">Back to projects</a>
+    </article>
+
+    <!-- S&P 500 -->
+    <article id="proj-spy" class="mb-5">
+      <h3 class="h4">S&amp;P 500 Market Forecasting</h3>
+      <div class="small text-muted mb-2">Sep 2024 – Dec 2024</div>
+      <div class="mb-3">
+        <span class="badge bg-secondary me-1">Python</span>
+        <span class="badge bg-secondary me-1">Machine Learning</span>
+        <span class="badge bg-secondary me-1">Data Science</span>
+        <span class="badge bg-secondary me-1">Predictive Modeling</span>
+        <span class="badge bg-secondary me-1">Predictive Analytics</span>
+        <span class="badge bg-secondary me-1">Data Cleaning</span>
+        <span class="badge bg-secondary me-1">Feature Engineering</span>
+        <span class="badge bg-secondary me-1">SVM (SVR)</span>
+        <span class="badge bg-secondary me-1">Random Forest</span>
+        <span class="badge bg-secondary me-1">PCA</span>
+        <span class="badge bg-secondary me-1">K-Means</span>
+        <span class="badge bg-secondary me-1">Isolation Forest</span>
+        <span class="badge bg-secondary me-1">Time Series CV</span>
+        <span class="badge bg-secondary me-1">FRED API</span>
+        <span class="badge bg-secondary me-1">EDGAR API</span>
+      </div>
+      <p class="mb-3">
+        Integrated SPY ETF prices, macroeconomic indicators (FRED API), and insider trading data (EDGAR API).
+        Hybrid pipeline: Random Forest for feature selection → PCA for dimensionality reduction → SVR for price prediction (<strong>R² = 0.89</strong>).
+        K-Means and Isolation Forest used for anomaly/insider detection with strong generalization via time series cross-validation.
+      </p>
+      <ul class="mb-3">
+        <li>R²: 0.89 on holdout</li>
+        <li>PCA-compressed feature space</li>
+        <li>Rolling split validation</li>
+      </ul>
+      <a href="#projects" class="btn btn-outline-primary btn-sm mt-1">Back to projects</a>
+    </article>
+
+    <!-- Heart Failure -->
+    <article id="proj-heart" class="mb-5">
+      <h3 class="h4">Heart Failure Risk Prediction</h3>
+      <div class="small text-muted mb-2">May 2024 – Aug 2024</div>
+      <div class="mb-3">
+        <span class="badge bg-secondary me-1">Python</span>
+        <span class="badge bg-secondary me-1">Apache Spark</span>
+        <span class="badge bg-secondary me-1">PySpark</span>
+        <span class="badge bg-secondary me-1">Logistic Regression</span>
+        <span class="badge bg-secondary me-1">PCA</span>
+        <span class="badge bg-secondary me-1">Feature Scaling</span>
+        <span class="badge bg-secondary me-1">Databricks</span>
+      </div>
+      <p class="mb-3">
+        Built and evaluated a logistic regression-based binary classifier on ~5,000 patient records (AUC = 0.823).
+        Identified key predictors (age, ejection fraction, serum creatinine); implemented scaling and PCA for performance.
+      </p>
+      <a href="#projects" class="btn btn-outline-primary btn-sm mt-1">Back to projects</a>
+    </article>
+
+    <!-- Mortality -->
+    <article id="proj-mortality" class="mb-5">
+      <h3 class="h4">Mortality Analysis: USA vs Caribbean</h3>
+      <div class="small text-muted mb-2">May 2024 – Aug 2024</div>
+      <div class="mb-3">
+        <span class="badge bg-secondary me-1">Microsoft Excel</span>
+        <span class="badge bg-secondary me-1">Microsoft Power Query</span>
+        <span class="badge bg-secondary me-1">Tableau</span>
+        <span class="badge bg-secondary me-1">Feature Engineering</span>
+        <span class="badge bg-secondary me-1">Data Visualization</span>
+      </div>
+      <p class="mb-3">
+        Merged and cleaned multi-source datasets (Data.gov, Kaggle) using Excel Power Query, VLOOKUP, and calculated fields.
+        Engineered features and built interactive dashboards in Excel/Tableau to analyze mortality vs socioeconomic factors (2000–2017).
+      </p>
+      <a href="#projects" class="btn btn-outline-primary btn-sm mt-1">Back to projects</a>
+    </article>
+
+    <!-- Weather -->
+    <article id="proj-weather" class="mb-2">
+      <h3 class="h4">Weather Impact on Resort Viability</h3>
+      <div class="small text-muted mb-2">Feb 2024 – May 2024</div>
+      <div class="mb-3">
+        <span class="badge bg-secondary me-1">R</span>
+        <span class="badge bg-secondary me-1">Regression Analysis</span>
+        <span class="badge bg-secondary me-1">Decision Trees</span>
+        <span class="badge bg-secondary me-1">Data Cleaning</span>
+        <span class="badge bg-secondary me-1">Feature Engineering</span>
+        <span class="badge bg-secondary me-1">KNN/Median Imputation</span>
+      </div>
+      <p class="mb-3">
+        Analyzed climate patterns using World Weather data; modeled temperature variability with regression techniques;
+        addressed missing data with KNN and median imputation.
+      </p>
+      <a href="#projects" class="btn btn-outline-primary btn-sm mt-1">Back to projects</a>
+    </article>
+
+    <div class="text-end"><a href="#home" class="small text-decoration-none">Back to top ↑</a></div>
+  </div>
+</section>
+
 
   <!-- Skills (granular, Bootstrap format) -->
   <section id="skills" class="py-5 bg-light" aria-labelledby="skills-heading">
@@ -297,7 +421,7 @@
           <div class="mb-3">
             <label class="form-label">Deep Learning (TensorFlow/Keras; PyTorch basics)</label>
             <div class="progress" role="progressbar" aria-label="Deep Learning" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar" style="width:78%">78%</div>
+              <div class="progress-bar" style="width:78%">82%</div>
             </div>
           </div>
 
