@@ -59,3 +59,14 @@ section[id]::before{
   pointer-events:none;
   filter:saturate(105%);
 }
+
+/* Bigger social icons: blue by default, white on hover (no circles) */
+.social a i{
+  font-size: 2rem;
+  color: var(--brand-accent);
+  transition: color .25s ease, transform .25s ease;
+}
+.social a:hover i{
+  color: #fff;
+  transform: scale(1.08);
+}
