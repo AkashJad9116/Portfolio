@@ -17,9 +17,10 @@ html { scroll-behavior: smooth; }
 
 .navbar.bg-dark { background-color: #0b0f14 !important; }
 
-.hero-avatar{
+.hero-avatar {
   max-width: 200px;
-  border: 4px solid rgba(255,255,255,.15);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.7) !important;
 }
 
 .lead .text-primary{ color: var(--brand-accent) !important; }
