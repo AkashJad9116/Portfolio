@@ -20,7 +20,7 @@ html { scroll-behavior: smooth; }
 .hero-avatar {
   max-width: 200px;
   border: 2px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.7) !important;
+  box-shadow: 0 0 25px 1px rgba(255, 255, 255, 0.7) !important;
 }
 
 .lead .text-primary{ color: var(--brand-accent) !important; }
