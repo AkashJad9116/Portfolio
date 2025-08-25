@@ -104,11 +104,14 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   window.addEventListener('resize', ()=>{ resize(); create(); });
-  document.addEventListener('mousemove', (e)=>{
+  document.addEventListener('click', (e) => {
     const r = canvas.getBoundingClientRect();
-    mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top;
+    mouse.x = e.clientX - r.left;
+    mouse.y = e.clientY - r.top;
+
+    setTimeout(() => { mouse.x = mouse.y = null; }, 800);
   });
-  document.addEventListener('mouseleave', ()=>{ mouse.x = mouse.y = null; });
+  // document.addEventListener('mouseleave', ()=>{ mouse.x = mouse.y = null; });
   document.addEventListener('visibilitychange', ()=>{
     running = !document.hidden;
     if (running) requestAnimationFrame(frame);
