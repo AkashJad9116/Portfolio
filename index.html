@@ -180,6 +180,26 @@
     <h2 id="projects-heading" class="mb-4">Projects</h2>
     <div class="row g-4">
 
+      <!-- Snowflake + dbt Hourly Taxi Analytics -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-img-top d-flex justify-content-center align-items-center py-4">
+            <!-- Purpose: visual cue for data platforms -->
+            <div class="rounded-circle border bg-white p-4">
+              <i class="bi bi-database-gear display-6" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Snowflake + dbt Hourly Taxi Analytics</h5>
+            <p class="card-text flex-grow-1">
+              ELT on Snowflake with dbt: staging view + <strong>hourly incremental</strong> fact, tests & lineage docs. Notebook triggers job and visualizes KPIs.
+            </p>
+            <div class="small text-muted mb-2">Snowflake • dbt Cloud • SQL • Python • ELT • Incremental Models</div>
+            <div><a class="btn btn-primary btn-sm" href="#proj-dbt-taxi">Details</a></div>
+          </div>
+        </div>
+      </div>
+
       <!-- Generic Stock Forecasting & Trading -->
       <div class="col-md-6 col-lg-4">
         <div class="card h-100 shadow-sm">
@@ -271,6 +291,41 @@
 <section id="details" class="py-5 bg-white" aria-labelledby="details-heading">
   <div class="container" data-aos="fade-up">
     <h2 id="details-heading" class="mb-4">Project Details</h2>
+
+    <!-- Snowflake + dbt Hourly Taxi Analytics -->
+    <article id="proj-dbt-taxi" class="mb-5">
+      <h3 class="h4">Snowflake + dbt Hourly Taxi Analytics Pipeline (NYC TLC)</h3>
+      <div class="small text-muted mb-2">Sep 2025</div>
+
+      <!-- Purpose: quick-scan tech badges for recruiters -->
+      <div class="mb-3">
+        <span class="badge bg-secondary me-1">Snowflake</span>
+        <span class="badge bg-secondary me-1">dbt Cloud</span>
+        <span class="badge bg-secondary me-1">SQL</span>
+        <span class="badge bg-secondary me-1">Python</span>
+        <span class="badge bg-secondary me-1">pandas</span>
+        <span class="badge bg-secondary me-1">ELT</span>
+        <span class="badge bg-secondary me-1">Incremental Models</span>
+        <span class="badge bg-secondary me-1">Data Quality Tests</span>
+        <span class="badge bg-secondary me-1">Data Lineage (dbt Docs)</span>
+        <span class="badge bg-secondary me-1">Orchestration</span>
+      </div>
+
+      <p class="mb-3">
+        Built an end-to-end <strong>ELT</strong> on Snowflake: Python ingests NYC Yellow Taxi trips into a raw table,
+        then <strong>dbt</strong> creates a typed staging view and an <strong>hourly, incremental</strong> fact table with schema tests and auto-generated lineage docs/DAG.
+        A <strong>dbt Cloud Job</strong> (triggerable from the notebook) runs build+test; the notebook queries the mart to compute KPIs and plot Trips per Hour.
+      </p>
+
+      <ul class="mb-3">
+        <li>Modeled <code>source → stg_yellow_tripdata (view) → fct_trip_metrics (hourly, incremental)</code></li>
+        <li>Added <code>not_null</code> / <code>unique</code> tests and generated dbt Docs for searchable lineage</li>
+        <li>Orchestrated with a dbt Cloud Job; notebook cell triggers on-demand runs</li>
+        <li>Produced time-series KPIs and a Trips-per-Hour chart directly from the mart</li>
+      </ul>
+
+      <a href="#projects" class="btn btn-outline-primary btn-sm mt-1">Back to projects</a>
+    </article>
 
     <!-- Generic Stock Forecasting & Trading -->
     <article id="proj-generic-stock" class="mb-5">

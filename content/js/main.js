@@ -111,7 +111,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(() => { mouse.x = mouse.y = null; }, 800);
   });
-  // document.addEventListener('mouseleave', ()=>{ mouse.x = mouse.y = null; });
   document.addEventListener('visibilitychange', ()=>{
     running = !document.hidden;
     if (running) requestAnimationFrame(frame);
